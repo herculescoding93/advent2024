@@ -20,5 +20,10 @@ for i in pairs:
     distance = abs(i[0] - i[1])
     # print(i)
     distanceSum += distance
-print(len(pairs))
-print(distanceSum)
+similarity = 0
+
+for i in col1:
+    similarity += col2.count(i) * i
+print("Pairs: " + str(len(pairs)))
+print("Distance: " + str(distanceSum))
+print("Similarity: " + str(similarity))
